@@ -1,0 +1,16 @@
+{
+  "name": "convosoasssignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": ".\\node_modules\\.bin\\cypress open",
+    "cypress:run": ".\\node_modules\\.bin\\cypress run --headless --browser chrome"    
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.3.3"
+  }
+}
