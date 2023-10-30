@@ -34,7 +34,9 @@ Cypress.Commands.add('searchByFilter', (campaign) => {
   cy.get('select[name="form[\'filterOption\']"]').select("Campaign")
   cy.get('input[placeholder=\'Click to select\']').click();
   cy.get('.selectize-input').type(campaign + "{enter}");
-  cy.get('.btn.btn-success:contains("Search")').click().wait(2000);
+  cy.get('.btn.btn-success:contains("Search")').click()
+  //Wait till all results loads
+  cy.wait(3000);
 })
 
 /* This method search the edited number and its setting as Automation Campaign*/
